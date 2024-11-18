@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.example.demo.models.Customer;
 
 public class CustomerController {
-	final private List<Customer> customers = List.of(Customer.builder().id("001").name("Nguyễn Tiến Dũng").email("tiendung@spkt.com").build(),
-			Customer.builder().id("002").name("Tiến Dũng").email("tiendung@gmail.com").build());
+	final private List<Customer> customers = List.of(Customer.builder().id("001").name("Vũ Bảo Long").email("vubaolong@spkt.com").build(),
+			Customer.builder().id("002").name("Bảo Long Vũ").email("baolongvu@gmail.com").build());
 	@GetMapping("/hello")
 	public ResponseEntity<String> hello() {
 		return ResponseEntity.ok("hello is Guest");
